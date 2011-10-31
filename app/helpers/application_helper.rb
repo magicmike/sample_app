@@ -9,5 +9,10 @@ module ApplicationHelper
 			"#{base_title} | #{@title}"
 		end
 	end
+	
+	# Taking logo variable out of _header.html.erb
+	def logo
+		base_logo = image_tag("logo.png", :alt => "Sample App", :class => "round")
+	end
 end
 
